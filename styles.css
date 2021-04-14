@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.newspaper-title {
+    text-align: center;
+}
+
+.newspaper {
+    display: flex;
+    justify-content: stretch;
+
+    flex-wrap: wrap;
+}
+
+.story {
+    width: 25%;
+    border: black solid 3px;
+}
+
+.story-big {
+    width: 50%;
+}
+
+.legend {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
