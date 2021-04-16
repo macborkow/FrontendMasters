@@ -1,30 +1,95 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
 }
 
 .newspaper-title {
-    text-align: center;
+  text-align: center;
+  font-family: "Pinyon Script", cursive;
+  font-weight: normal;
+  font-size: 60px;
+  border: black solid;
+  border-width: 0px 0px 2.75px;
+  margin: 0px 0px 0px 1px;
+  padding: 30px;
 }
 
 .newspaper {
-    display: flex;
-    justify-content: stretch;
-
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: stretch;
+  border-left: solid black 1px;
+  margin-left: 1px;
+  flex-wrap: wrap;
 }
 
 .story {
-    width: 25%;
-    border: black solid 3px;
+  padding: 0 10px;
+  margin: 0;
+  width: 25%;
+  border: black solid;
+  border-width: 0px 1px 2.75px 0px;
+  font: TimesNewRoman;
 }
 
 .story-big {
-    width: 50%;
+  width: 50%;
+}
+
+.story-title {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  margin: 30px 0;
+}
+
+.story-img {
+  width: 100%;
 }
 
 .legend {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+.nav-section {
+  background-color: red;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.story-section-a {
+    text-decoration: none;
+    color: black;
+    font-family: Futura;
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+}
+
+.story-section-pol {
+    background-color: #FFEAA7;
+}
+
+.story-section-tech {
+    background-color: #81ECEC;
+}
+
+.story-section-loc {
+    background-color: #55EFC4;
+}
+
+.story-section-op {
+    background-color: #74B9FF;
+}
+
+.story-section-sp {
+    background-color: #A29BFE;
 }
