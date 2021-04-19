@@ -32,6 +32,7 @@ window.onload = () => {
         case "=":
           item.addEventListener("click", () => {
             if (!resultShown) {
+              makeMinus = false;
               switch (operator) {
                 case "+":
                   result = (
@@ -73,7 +74,10 @@ window.onload = () => {
           item.addEventListener("click", () => {
             if (operator !== "-" && screen.innerHTML === "0") {
               makeMinus = true;
-            } else operator = item.innerHTML;
+            } else {
+              operator = item.innerHTML;
+              makeMinus = false;
+            }
 
             if (result === "0") {
               result = screen.innerHTML;
@@ -91,10 +95,9 @@ window.onload = () => {
         if (!resultShown) {
           if (screen.innerHTML === "0") {
             if (makeMinus) {
-                screen.innerHTML = -item.innerHTML;
-                makeMinus = false;
-            }
-            else screen.innerHTML = item.innerHTML;
+              screen.innerHTML = -item.innerHTML;
+              makeMinus = false;
+            } else screen.innerHTML = item.innerHTML;
           } else {
             screen.innerHTML += item.innerHTML;
           }
