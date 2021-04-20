@@ -1,18 +1,18 @@
 // TODO: define addFavoriteBook(..) function
 
 let addFavoriteBook = (bookTitle) => {
-    if(!bookTitle.includes("Great")) {
-        favoriteBooks.push(bookTitle);
-    }
-}
+  if (!bookTitle.includes("Great")) {
+    favoriteBooks.push(bookTitle);
+  }
+};
 
 // TODO: define printFavoriteBooks() function
 
 let printFavoriteBooks = () => {
-    console.log(`
+  console.log(`
     Favorite books are ${favoriteBooks.join(", ")}.
     `);
-}
+};
 
 var favoriteBooks = [];
 
