@@ -1,0 +1,9 @@
+let createCharacter = (name, age) => {
+  return { name, age };
+}
+
+characters = [];
+
+characters.push(createCharacter("Mrs. White", 50));
+
+console.log(characters);
