@@ -21,3 +21,7 @@ let _ = {
 			};
 	}
 };
+
+_.each(suspects, (thing) => {
+	console.log(`${thing}`);
+});
